@@ -24,9 +24,13 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let customerName = "Alice";
+let numberOfItems = 5;
+let totalCost = 20;
 
-console.log(d);
+//improvements
+let perItemCost = totalCost/numberOfItems;
+let purchaseReason = " her birthday for"
+let purchaseSummary  = customerName + " bought " + numberOfItems + " items for" + purchaseReason + " $" + totalCost + "." + "Per item it costed $" + perItemCost;
+
+console.log(purchaseSummary );
